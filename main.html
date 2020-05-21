@@ -220,12 +220,31 @@
 		yAnchor: 1
 	});
 	
-	function relayout() {
-		
-		// 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
-		// 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다
-		// window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
-		map.relayout();
+	function toggleMapWrapper(active, position) {
+		if (active) {
+			
+			// 지도를 감싸고 있는 div의 너비가 100%가 되도록 class를 변경합니다
+			container.className = 'map-size';
+			
+			// 지도의 크기가 변경되었기 때문에 relayout 함수를 호출합니다
+			map.relayout();
+			
+			// 지도의 너비가 변경될 때 지도중심을 입력받은 위치(position)로 설정합니다
+			map.setCenter(position);
+		} else {
+			
+			// 지도만 보여지고 있는 상태이면 지도의 너비가 50%가 되도록 class를 변경하여
+			// 로드뷰가 함께 표시되게 합니다
+			if (container.className.indexOf('view_roadview') === -1) {
+				container.className = 'view_roadview';
+				
+				// 지도의 크기가 변경되었기 때문에 relayout 함수를 호출합니다
+				map.relayout();
+				
+				// 지도의 너비가 변경될 때 지도중심을 입력받은 위치(position)로 설정합니다
+				map.setCenter(position);
+			}
+		}
 	}
 </script>
 </html>
