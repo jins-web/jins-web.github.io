@@ -181,7 +181,7 @@
 	var container = document.getElementById('map'); // 지도를 표시할 div
 	var options = {
 		center: new kakao.maps.LatLng(37.488473, 126.993619), // 지도의 중심 좌표
-		level: 4 // 지도의 확대 레벨
+		level: 3 // 지도의 확대 레벨
 	};
 	var map = new kakao.maps.Map(container, options);
 
@@ -219,5 +219,13 @@
 		content: content,
 		yAnchor: 1
 	});
+	
+	function relayout() {
+		
+		// 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+		// 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다
+		// window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+		map.relayout();
+	}
 </script>
 </html>
