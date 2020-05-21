@@ -895,25 +895,25 @@ input#m-menu:checked ~ nav {
 .sub-cube-inner.inner-01 {
 	background-image: url(../img/mega.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-02 {
 	background-image: url(../img/samsung.png);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-03 {
 	background-image: url(../img/ktcom.png);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-04 {
 	background-image: url(../img/Ericsson.png);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-05 {
@@ -925,7 +925,7 @@ input#m-menu:checked ~ nav {
 .sub-cube-inner.inner-06 {
 	background-image: url(../img/lglogo.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-07 {
@@ -937,25 +937,25 @@ input#m-menu:checked ~ nav {
 .sub-cube-inner.inner-08 {
 	background-image: url(../img/lglogo.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-09 {
 	background-image: url(../img/lglogo.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner.inner-10 {
 	background-image: url(../img/btv.png);
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 60%;
 	background-position: center;
 }
 .sub-cube-inner.inner-11 {
 	background-image: url(../img/lglogo.jpg);
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 80%;
 	background-position: center;
 }
 .sub-cube-inner a {
@@ -1282,6 +1282,12 @@ a.top {
 	/* sub page */
 	.sub-cube-inner {
 		width:100%;
+		background-size: 50%!important;
+	}
+	.sub-cube-inner.inner-05,
+	.sub-cube-inner.inner-07
+	{
+		background-size: contain!important;
 	}
 }
 
