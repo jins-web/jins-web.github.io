@@ -421,14 +421,16 @@ input#m-menu:checked ~ nav {
 .sec-txt-wrap {
 	width:50%;
 	height: 100%;
-	padding-top:11.250em;
-	padding-left:12.500em;
+	padding-left: 200px;
 	background:rgba(0,0,0,0.7);
 	text-align:left;
 }
+.sec-txt-wrap h2 {
+	padding-top: 150px;
+}
 .sec-txt-wrap .sec-sub-txt {
 	width:430px;
-	padding:1.250em 0 1.875em;
+	padding: 20px 0;
 	color:#fff;
 }
 .sec-bg0 {
@@ -1281,9 +1283,6 @@ a.top {
 	/* sub page */
 	.sub-cube-inner {
 		width:100%;
-		background-size: 50%!important;
-	}
-	.sub-cube-inner.inner-01 {
 		background-size: 50%!important;
 	}
 	.sub-cube-inner.inner-05,
