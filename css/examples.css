@@ -1283,6 +1283,9 @@ a.top {
 		width:100%;
 		background-size: 50%!important;
 	}
+	.sub-cube-inner.inner-01 {
+		background-size: 50%!important;
+	}
 	.sub-cube-inner.inner-05,
 	.sub-cube-inner.inner-07
 	{
