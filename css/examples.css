@@ -1085,6 +1085,9 @@ input#m-menu:checked ~ nav {
 .sub-detail-img.skb03 {
 	background-image: url("../img/img-b-03.JPG");
 }
+.sub-detail-img.noimg {
+	background-image: url("../img/img-no.png");
+}
 .sub-detail-txt {
 	display: flex;
 	flex-direction: column;
