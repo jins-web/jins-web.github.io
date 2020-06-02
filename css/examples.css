@@ -263,7 +263,7 @@ body{
 }
 .header-menu li a {
 	color:#000;
-	font-size:1.125em;
+	font-size:22px;
 }
 .header-menu li:hover a,
 .header-menu li:focus a
@@ -416,9 +416,10 @@ input#m-menu:checked ~ nav {
 	text-align:left;
 }
 .sec-txt-wrap .sec-sub-txt {
-	width:430px;
+	/*width:430px;*/
 	padding:1.250em 0 1.875em;
 	color:#fff;
+	font-size: 20px;
 }
 .sec-bg0 {
 	background-image: url("../img/bg0.jpg");
@@ -656,6 +657,8 @@ input#m-menu:checked ~ nav {
 .contact-info .email {padding-bottom:10px;}
 .contact-info .email em,
 .contact-info .phone em {font-size: 25px;}
+.contact-info .email span,
+.contact-info .phone span {font-size: 20px;}
 .wrap_content.map {
 	width:100%;
 	position: absolute;
@@ -1104,7 +1107,7 @@ input#m-menu:checked ~ nav {
 	transition: all .5s ease-in;
 	margin:15px auto 0;
 }
-.sub-detail-txt .sub-txt {padding:15px 30px 0;}
+.sub-detail-txt .sub-txt {padding:15px 30px 0; line-height: 25.888px;}
 .sub-detail-txt.sub-bg01 {
 	background:#5f9ea0;
 }
@@ -1204,6 +1207,10 @@ a.top {
 		width:auto;
 		padding-left:30px;
 		padding-right: 30px;
+		padding-top: 100px;
+	}
+	.sec-link-area {
+		padding-top: 15px;
 	}
 	.sec-link-area div {
 		width:auto;
@@ -1214,6 +1221,10 @@ a.top {
 	.sec-link-area div a {
 		width:auto;
 		height: auto;
+		padding: 20px;
+	}
+	.sec-link-area .sub-txt {
+		padding-top: 15px;
 	}
 	.sec-link-area div:hover {
 		transform: none;
@@ -1231,7 +1242,13 @@ a.top {
 		display: none;
 	}
 	.header-menu li:last-child {padding-right: 0;}
-	.sec-txt-wrap .sec-sub-txt {width:auto;}
+	.sec-txt-wrap > h2 {
+		font-size: 25px;
+	}
+	.sec-txt-wrap .sec-sub-txt {
+		width:auto;
+		font-size: 16px;
+	}
 	.header-menu {
 		width:100%;
 		align-self: center;
