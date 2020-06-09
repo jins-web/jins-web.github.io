@@ -899,7 +899,7 @@ input#m-menu:checked ~ nav {
 .sub-cube-inner.inner-03 {
 	background-image: url(../img/ktcom.png);
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 60%;
 	background-position: center;
 }
 .sub-cube-inner.inner-04 {
@@ -941,7 +941,7 @@ input#m-menu:checked ~ nav {
 .sub-cube-inner.inner-10 {
 	background-image: url(../img/btv.png);
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 50%;
 	background-position: center;
 }
 .sub-cube-inner.inner-11 {
@@ -1219,12 +1219,21 @@ a.top {
 		margin-bottom:20px;
 	}
 	.sec-link-area div a {
-		width:auto;
+		width:100%;
 		height: auto;
-		padding: 20px;
+		padding: 15px;
 	}
 	.sec-link-area .sub-txt {
 		padding-top: 15px;
+		font-size: 16px;
+	}
+	.sec-link-area .sub-txt.fl {
+		width: 48%;
+		float: left;
+	}
+	.sec-link-area .sub-txt.fr {
+		width: 48%;
+		float: right;
 	}
 	.sec-link-area div:hover {
 		transform: none;
