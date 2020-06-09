@@ -50,7 +50,8 @@
 									});
 							},
 							keyboardScrolling:true,
-							scrollBar:false,
+							autoScrolling:true,
+							/*scrollBar:false,*/
 							'navigation': true,
 							'navigationPosition': 'right',
 							'navigationTooltips': ['section0', 'section1', 'section2', 'section3'],
@@ -62,6 +63,15 @@
 									}
 							},
 					});
+			});
+			$(document).ready(function () {
+					var windowWidth = $(window).width();
+					
+					if('windowWidth  < 768') {
+						$('#fullpage').fullpage('autoScrolling','false')
+					} else {
+						$('#fullpage').fullpage('autoScrolling','true')
+					}
 			});
 	</script>
 </head>
@@ -105,15 +115,15 @@
 				<div class="sec-box01">
 					<a href="about.html">
 					<p class="tit">Work</p>
-					<p class="sub-txt">2017 ~ amoeba<br/>근무중</p>
-						<p class="sub-txt">2013 ~ 2014<br/>S2 publishing</p>
+					<p class="sub-txt fl">2017 ~ amoeba<br/>근무중</p>
+						<p class="sub-txt fr">2013 ~ 2014<br/>S2 publishing</p>
 					</a>
 				</div>
 				<div class="sec-box02">
 					<a href="about.html">
 					<p class="tit">Education</p>
-					<p class="sub-txt">2016 - 2016<br/>멀티캠퍼스</p>
-						<p class="sub-txt">2012 - 2013<br/>한국직업전문학교</p>
+					<p class="sub-txt fl">2016 - 2016<br/>멀티캠퍼스</p>
+						<p class="sub-txt fr">2012 - 2013<br/>한국직업전문학교</p>
 					</a>
 				</div>
 				<div class="sec-box03">
