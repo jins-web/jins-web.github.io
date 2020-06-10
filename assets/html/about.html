@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="jinwook kim" />
+	<!-- begin open graph	-->
+	<meta property="og:url"                content="" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="jinwook kim portfolio" />
+	<meta property="og:description"        content="프로젝트 정보 정리" />
+	<meta property="og:image"              content="" />
+	<!-- //end open graph	-->
+	<title>김진욱 포트폴리오</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/example.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/examples.js"></script>
+	<script type="text/javascript" src="../js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			verticalCentered: true,
+			anchors: ['anchor1', 'anchor2', 'anchor3'],
+			menu: '#menu',
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+			'navigation': false,
+			'navigationPosition': 'right',
+			autoScrolling: false,
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="header-wrap">
+	<input id="m-menu" class="menu-ch" type="checkbox" />
+	<label for="m-menu" id="menu-check">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<nav>
+		<ul class="header-menu">
+			<li><a href="main.html">Home</a></li>
+			<li><a href="sub.html">Profile</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<div class="randing-sec">
+			<h2>about me</h2>
+		</div>
+	</div>
+	<div class="section fp-auto-height" id="section1">
+		<div class="sub-detail-wrap about-wrap">
+			<div class="sub-detail-img abuot-bg01"></div>
+			<div class="sub-detail-txt about-txt01">
+				<h2>Work</h2>
+				<P class="sub-txt">2017 ~ 근무중<br/>Web Publisher - amoeba<br/>두번째 직장에서 선임으로 근무중입니다.</P>
+				<P class="sub-txt">2013-2014<br/>Web Publisher - s2 publishing<br/>퍼블리셔로 첫직장 이며 1년6개월간 근무했습니다.</P>
+			</div>
+			<div class="sub-detail-img abuot-bg02"></div>
+			<div class="sub-detail-txt about-txt02">
+				<h2>Education</h2>
+				<P class="sub-txt">2016-2016<br/>효율적이고 확장 가능한 빅 데이터 전문가 과정 - 멀티캠퍼스<br/>리눅스 를 기반으로 빅데이터 환경을 구현하여 hadoop 프로그램과 R 프로그램을 이용해 분석한 데이터를 HTML5,CSS 와 Bootstrap / Java / Jsp / Servlet 를 이용해서 MVC모델로 웹 개발을하였고 반응형웹 으로 구현하였습니다.</P>
+				<p class="sub-txt">2012-2013<br/>표준 퍼블리싱 중급과정 - 한국직업전문학교<br/>HTML,CSS,JavaScript 활용하여 웹 표준에 맞추어 어떻게 화면을 구성하고 마크업하는지 배웠습니다.</p>
+			</div>
+			<div class="sub-detail-img abuot-bg03"></div>
+			<div class="sub-detail-txt about-txt03">
+				<h2>Profile</h2>
+				<p class="sub-txt">
+					이름 : 김진욱<br/>
+					생년월일 : 1988년 1월 28일<br/>
+					거주지 : 서울 서초구 방배동<br/>
+				</p>
+				<p class="sub-txt">2006-2011<br/>
+					경민대학교 - 부동산경영 졸업
+				</p>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="top">Top</a>
+</div>
+</body>
+</html>

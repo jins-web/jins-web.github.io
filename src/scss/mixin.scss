@@ -1,0 +1,13 @@
+/* font */
+@mixin set-font($size, $weight, $color, $height:1) {
+  font-size:$size;
+  font-weight:$weight;
+  color:$color;
+  line-height:$height;
+}
+/* 말줄임 */
+@mixin ellipsis {
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

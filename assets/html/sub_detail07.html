@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="jinwook kim" />
+	<!-- begin open graph	-->
+	<meta property="og:url"                content="" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="jinwook kim portfolio" />
+	<meta property="og:description"        content="프로젝트 정보 정리" />
+	<meta property="og:image"              content="" />
+	<!-- //end open graph	-->
+	<title>김진욱 포트폴리오</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/example.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/examples.js"></script>
+	<script type="text/javascript" src="../js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			verticalCentered: true,
+			anchors: ['anchor1', 'anchor2', 'anchor3'],
+			menu: '#menu',
+			sectionsColor: ['#1bbc9b', '#fff'],
+			'navigation': false,
+			'navigationPosition': 'right',
+			autoScrolling: false,
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="header-wrap">
+	<input id="m-menu" class="menu-ch" type="checkbox" />
+	<label for="m-menu" id="menu-check">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<nav>
+		<ul class="header-menu">
+			<li><a href="main.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="sub.html">Profile</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<div class="randing-sec">
+			<h2>what I do</h2>
+			<P>I creative websites</P>
+			<a href="sub.html" class="btn-classic center">go back<span></span></a>
+		</div>
+	</div>
+	<div class="section fp-auto-height" id="section1">
+		<div class="sub-detail-wrap">
+			<div class="sub-detail-img noimg"></div>
+			<div class="sub-detail-txt sub-bg01">
+				<h2>Project Name</h2>
+				<P class="sub-txt">SK hynix EGSS 고도화</P>
+			</div>
+			<div class="sub-detail-txt sub-bg02">
+				<h2>Project Period</h2>
+				<P class="sub-txt">2019년 2월 ~ 2019년 5월(4개월)</P>
+			</div>
+			<div class="sub-detail-img noimg"></div>
+			<div class="sub-detail-img noimg"></div>
+			<div class="sub-detail-txt sub-bg03">
+				<h2>Role & Result</h2>
+				<P class="sub-txt">기존 노후화된 EGSS 사내 사이트를 고도화 작업 했습니다.</P>
+				<P class="sub-txt">메인 및 서브 레이아웃을 모두 교체해야 했고 메인레이아웃과 서브 상세 페이지들의 전반적인 작업에 참여했습니다. 일부 페이지는 모바일용이 필요해 모바일 작업도 병행하였습니다. 퍼블, 디자인, 기획은 sk hynix 분당에 위치해 작업했으며 개발팀은 sk hynix 이천에서 작업하고 있어서 사내메신저 와 전화로 문의사항을 전달받았으며 가끔은 회의를 위해 이천에 방문도 했습니다. 일정이 빠듯한 상황이었고 기획 수정이 잦아서 개발과의 일정을 맞추는 게 쉽지 않았지만, 개발과의 협의를 통해 일정에 맞추어 잘 마무리할수 있었습니다.</P>
+				<a href="#" class="btn-classic center">go site<span></span></a>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="top">Top</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="../css/examples.css" />
+  <style type="text/css">
+    .tab-container li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .tab-container li a {
+      display: inline-block;
+      width: 200px;
+      padding: 10px 0;
+      background: #3a3a3a;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      border-bottom: 1px solid #ececec;
+    }
+    .tab-container .acc-item.close .inner {
+      display: none;
+      width: 200px;
+      padding: 10px 0;
+      background: #ddd;
+      color: #000000;
+      text-align: center;
+    }
+    .tab-container .acc-item.open .inner.active {
+      display: block;
+    }
+    .tabex-wrap {
+      margin: 0 auto;
+    }
+    .tabex-wrap li {
+      width: 200px;
+      padding: 10px 0;
+      background: #1f6377;
+      color: #ffffff;
+      text-align: center;
+    }
+    .tabex-wrap li.on {
+      background: #5bc0de;
+    }
+    .tab-panel .tab-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .tab-panel .tab-header li {
+      width: 200px;
+      padding: 10px 0;
+      background: #E56E77;
+      border: 1px solid #ffffff;
+      text-align: center;
+    }
+    .tab-contswrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .tab-contswrap .tab-conts {
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      display: none;
+    }
+    .tab-contswrap .tab-conts.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul class="tab-container">
+    <li class="acc-item close"><a href="#" class="acc-head">tab 01</a>
+      <div class="inner">
+        tab 01 inner 입니다.
+      </div>
+    </li>
+    <li class="acc-item close"><a href="#" class="acc-head">tab 02</a>
+      <div class="inner">
+        tab 02 inner 입니다.
+      </div>
+    </li>
+  </ul>
+
+  <ul class="tabex-wrap">
+    <li class="on" onclick="tabClick(this);">tab 01</li>
+    <li onclick="tabClick(this);">tab 02</li>
+    <li onclick="tabClick(this);">tab 03</li>
+    <li onclick="tabClick(this);">tab 04</li>
+  </ul>
+
+  <div class="tab-panel">
+    <ul class="tab-header">
+      <li class="tab active">tab header 01</li>
+      <li class="tab">tab header 02</li>
+    </ul>
+    <div class="tab-contswrap">
+      <div class="tab-conts active">tab conts 01</div>
+      <div class="tab-conts">tab conts 02</div>
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript">
+    var accitem = document.getElementsByClassName('acc-item');
+    var acchead = document.getElementsByClassName('acc-head');
+    for (i = 0; i < acchead.length; i++) {
+        acchead[i].addEventListener('click', toggleItem, false);
+    }
+    function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accitem.length; i++) {
+            accitem[i].className = 'acc-item close';
+        }
+        if (itemClass == 'acc-item close') {
+            this.parentNode.className = 'acc-item open';
+        }
+    }
+    /////////////////////////
+    function tabClick(obj) {
+        var i;
+        var tabNum = obj.parentNode.children.length;
+        for (i =0; i < tabNum; i++) obj.parentNode.children[i].className="";
+        obj.className="on";
+    }
+    /////////////////////////
+    var tabitem = document.getElementsByClassName('tab');
+    var tabconts = document.getElementsByClassName('tab-conts');
+    for (i = 0; i < tabitem.length; i++) {
+        tabitem[i].addEventListener('click', toggleitems, false);
+    }
+    function toggleitems() {
+        var tabclass = this.parentNode.className;
+      for(i = 0; i < tabconts.length; i++) {
+          tabitem[i].className = 'tab-conts';
+      }
+      if (tabclass == 'tab-conts') {
+          this.parentNode.className = 'tab-conts active'
+      }
+    }
+    
+</script>
+</html>
