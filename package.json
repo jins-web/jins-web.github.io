@@ -1,0 +1,33 @@
+{
+  "name": "jins-web.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jins-web/jins-web.github.io.git"
+  },
+  "author": "jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jins-web/jins-web.github.io/issues"
+  },
+  "homepage": "https://github.com/jins-web/jins-web.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "gulp.spritesmith": "^6.11.0",
+    "node-sass": "^4.14.1",
+    "run-sequence": "^2.2.1"
+  }
+}
