@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>B tv Plus | SKB</title>
+    <style>
+        /* reset */
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
+        /* HTML5 display-role reset for older browsers */
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+        body{line-height:1;color:#000;}
+        ol,ul{list-style:none;}
+        blockquote,q{quotes:none;}
+        blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+
+        .pcMode .popupWrap .popupCon {
+            transform: translate3d(75%, -50%, 0);
+        }
+
+        /* remember to define visible focus styles!
+        :focus{outline:?????;}
+        */
+
+        /* remember to highlight inserts somehow! */
+        ins{text-decoration:none;}
+        del{text-decoration:line-through;}
+
+        table{border-collapse:collapse;border-spacing:0;table-layout:fixed;width:100%;}
+
+        h1,h2,h3,h4,h5,h6,strong{font-weight:normal;}
+        *{box-sizing:border-box;font-family: 'SK Btv', 'Sans-serif';}
+        a{display:inline-block;text-decoration:none;color:#000;}
+        a img{display:block;}
+        caption,
+        legend{display:none;}
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        button{margin:0;padding:0;border:0;background:none;box-sizing:inherit;-webkit-box-sizing:inherit;}
+        em{font-style:normal;}
+
+        html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;}
+
+        .slide{flex-shrink:0;}
+
+        /* FONT SMOOTHING */
+        body {
+            /* -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale; */
+        }
+        /* common */
+        @charset "UTF-8";
+
+        html{
+            font-size:10px;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #11033a;
+        }
+        body.white-theme {
+            background-color:#f9f9f9;
+        }
+        body.gray-theme {
+            background-color:#ebecef;
+        }
+
+        #wrapper {
+            font-size:1.2rem;
+        }
+
+        /* 맨위로 가기 */
+        #top {
+            z-index:9999;
+            position:fixed;
+            right:1.4rem;
+            bottom:1.4rem;
+            width:6rem;
+            height:6rem;
+            background:url(../images/common/icon/ic-btn-top.png) no-repeat center / 6rem;
+            font-size:0;
+            text-indent:-9999px;
+        }
+
+        .hidden {
+            display:none;
+        }
+        body, html {
+            font-size: 15px !important;
+        }
+
+        .newyear-wrap {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #ffdd76;
+        }
+
+        .newyear-wrap .tit img {
+            width: 100%;
+        }
+
+        .newyear-wrap .newyear-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .newyear-wrap .newyear-content input {
+            height: 5.33rem;
+        }
+
+        .newyear-wrap .newyear-content.name {
+            padding-right: 6.66rem;
+        }
+
+        .newyear-wrap .newyear-content.name input,
+        .newyear-wrap .newyear-content.name .input {
+            width: 100%;
+        }
+        .newyear-wrap .newyear-content .checks div {padding-right:3.73rem;}
+        .newyear-wrap .newyear-content .year div {display: flex; align-items: center; justify-content: flex-start;}
+        .newyear-wrap .newyear-content .year div input {width:8rem; font-size:1.4rem; padding-left:2rem;}
+        .newyear-wrap .newyear-content .year div input::placeholder {font-size:1.4rem;}
+        .newyear-wrap .newyear-content .year {width:100%; display: flex; align-items: center; justify-content: flex-start;}
+        .newyear-wrap .newyear-content .year span {display: inline-block; padding:0 2rem 0 0.86rem;}
+        .newyear-wrap .newyear-content.birth {padding-top: 1.6rem; padding-bottom:3.33rem;}
+        .newyear-wrap .newyear-content.time {padding-right: 6.66rem;}
+        .newyear-wrap .newyear-content.time .time {width:100%}
+        .newyear-wrap .newyear-content.time .time select {height:5.33rem; width:100%; font-size:1.4rem; padding-left:2rem;}
+        .newyear-wrap .btn-area {width:36.07rem; margin:0 auto;}
+        /* media query */
+        @media screen and (max-width: 475px) {
+            .newyear-wrap {max-width:100%;}
+            .newyear-wrap img {width:100%;}
+            .newyear-wrap .newyear-content {padding-right:5%!important; justify-content:flex-start;}
+            .newyear-wrap .newyear-content input {height: 2.93rem;}
+            .newyear-wrap .newyear-content.name .input {width:68%;}
+            .newyear-wrap .newyear-content .checks.new-cont {width:68%;}
+            .newyear-wrap .newyear-content .tit {width:32%;}
+            .newyear-wrap .newyear-content .new-cont {width:68%;}
+            .newyear-content .checks input[type="radio"] + label:before {top:-5px; width:21px; height:21px;}
+            .newyear-content .checks input[type="radio"]:checked + label:after {top:0px; left:5px; width:12px; height:12px;}
+            .newyear-content .checks input[type="radio"] + label {padding-left:2rem; font-size:0.95rem;}
+            .newyear-wrap .newyear-content .checks div {padding-right:0.93rem;}
+            .newyear-wrap .newyear-content .checks div:last-child {padding-right:0;}
+            .newyear-wrap .newyear-content .year div {width:calc(100%/3);}
+            .newyear-wrap .newyear-content .year span {font-size:0.95rem; padding: 0 1rem 0 0.5rem;}
+            .newyear-wrap .newyear-content .year div input {width:100%; font-size:0.95rem; padding-left:0; text-align:center;}
+            .newyear-wrap .newyear-content .year div input::placeholder {font-size:0.95rem;}
+            .newyear-wrap .newyear-content.time .time {width:68%;}
+            .newyear-wrap .newyear-content.time .time select {height:2.93rem; font-size:0.95rem;}
+            .newyear-wrap .btn-area {width:100%; padding:0 13%;}
+            .newyear-wrap .btn-area a:first-child {margin-bottom:0.73rem;}
+            .newyear-wrap .newyear-content.birth {padding-bottom:1.8rem; padding-top:0.86rem;}
+        }
+        /* radio custom */
+        .newyear-wrap .newyear-content .checks {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .checks input[type="radio"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .checks input[type="radio"] + label {
+            display: inline-block;
+            position: relative;
+            padding-left: 56px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .checks input[type="radio"] + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -11px;
+            width: 42px;
+            height: 42px;
+            text-align: center;
+            background: #fafafa;
+            border: 1px solid #cacece;
+            border-radius: 100%;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        }
+
+        .checks input[type="radio"] + label:active:before, .checks input[type="radio"]:checked + label:active:before {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .checks input[type="radio"]:checked + label:before {
+            background: #fff;
+            border-color: #adb8c0;
+        }
+
+        .checks input[type="radio"]:checked + label:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 12px;
+            width: 20px;
+            height: 20px;
+            background: #000;
+            border-radius: 100%;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <!-- 내용은 이곳에 나열한다. -->
+    <div id="content-container">
+        <!-- market 85 -->
+        <div class="newyear-wrap">
+            <h2 class="tit"><img src="../img/market/img_tit.gif" alt="대박나이스 2021년 신녀운세"></h2>
+            <div class="info-container">
+                <!-- 이름 -->
+                <div class="newyear-content name">
+                    <div class="tit"><img src="../img/market/img_name.gif" alt="이름"></div>
+                    <div class="input new-cont"><input type="text"></div>
+                </div>
+                <div><img src="../img/market/img_bg.gif" alt="bg"></div>
+                <!-- 성별 -->
+                <div class="newyear-content">
+                    <div class="tit"><img src="../img/market/img_sex.gif" alt="성별"></div>
+                    <div class="checks new-cont">
+                        <div>
+                            <input type="radio" id="women" name="sex" checked><label for="women">여자</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="man" name="sex"><label for="man">남자</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 양력/음력 -->
+                <div class="newyear-content">
+                    <div class="tit"><img src="../img/market/img_birth.gif" alt="양력/음력"></div>
+                    <div class="checks new-cont">
+                        <div>
+                            <input type="radio" id="birth01" name="birth" checked><label for="birth01">양력</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="birth02" name="birth"><label for="birth02">음력</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="birth03" name="birth"><label for="birth03">음력(윤달)</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- 생년월일 -->
+                <div class="newyear-content birth">
+                    <div class="tit"><img src="../img/market/img_year.gif" alt="생년월일"></div>
+                    <div class="year new-cont">
+                        <div>
+                            <input type="text" placeholder="1987" maxlength="4"><span>년</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="01" maxlength="2"><span>월</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="01" maxlength="2"><span>일</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 출생시간 -->
+                <div class="newyear-content time">
+                    <div class="tit"><img src="../img/market/img_time.gif" alt="출생시간"></div>
+                    <div class="time new-cont">
+                        <select name="" id="">
+                            <option value="">23:00 ~ 23:00</option>
+                            <option value="">23:00 ~ 23:00</option>
+                            <option value="">23:00 ~ 23:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div><img src="../img/market/img_noti01.gif" alt="개인정보 주의사항"></div>
+                <div class="btn-area">
+                    <a href="#"><img src="../img/market/img_btn_01.gif" alt="2021 운세 보러가기"></a>
+                    <a href="#"><img src="../img/market/img_btn_02.gif" alt="친구에게 소문내기"></a>
+                </div>
+                <div><img src="../img/market/img_noti02.png" alt="주의사항"></div>
+            </div>
+        </div>
+        <!-- //market 85 -->
+        <!-- 팝업 -->
+        <div class="pop-container active" style="display: none;">
+            <div class="pop-inner">
+                <img src="//webimage.10x10.co.kr/fixevent/event/2020/106538/m/img_pop_intro.png"
+                     alt="100% 과즙 상큼폭탄 마이구매 jam">
+                <button type="button" class="btn-close">닫기</button>
+            </div>
+        </div>
+        <!--//팝업-->
+    </div>
+</div>
+
+<!-- 공통으로 필요한 스크립트는 common.js에 작성한다. -->
+<script type="text/javascript" src="../../assets/js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
+<script type="text/javascript" src="../../assets/js/common.js"></script>
+<!-- 페이지에 필요한 스크립트는 이곳에 작성한다. -->
+<script>
+    $(document).ready(function () {
+        $(".btn-enter").on("click", function () {
+            $(".pop-container").fadeIn();
+        })
+        $(".btn-close").on("click", function () {
+            $(".pop-container").fadeOut();
+        })
+    });
+</script>
+</body>
+</html>
