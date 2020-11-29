@@ -324,8 +324,12 @@
             /* tab conts 높이 */
             var height = $(window).height();
             console.log(height);
-            var pop_top = $(".pop-top").height() + $(".tit-name").height() + $(".tab").height();
+            var pop_top = $(".pop-top").height();
             console.log(pop_top);
+            var pop_top2 = + $(".tit-name").height();
+            console.log(pop_top2);
+            var pop_top3 = $(".tab").height();
+            console.log(pop_top3);
            /* var cont_height = height - pop_top;
             console.log(cont_height);
             $(".tab_con").css("max-height",cont_height);*/
