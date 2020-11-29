@@ -33,6 +33,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1X14yYOsnfNCvCaF7JrhohhTJhR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LG 지능형 CCTV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/market" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -92,6 +95,7 @@
       <workItem from="1586233465014" duration="12813000" />
       <workItem from="1587444092388" duration="3790000" />
       <workItem from="1588553817782" duration="46991000" />
+      <workItem from="1606635985961" duration="38000" />
     </task>
     <servers />
   </component>

@@ -4,14 +4,9 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>B tv Plus | SKB</title>
+    <title>test</title>
     <style>
         /* reset */
-        /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0b1 | 201101
-   NOTE: WORK IN PROGRESS
-   USE WITH CAUTION AND TEST WITH ABANDON */
-
         html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;}
         /* HTML5 display-role reset for older browsers */
         article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
@@ -58,45 +53,7 @@
             /* -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale; */
         }
-        /* common */
-        @charset "UTF-8";
-
-        html{
-            font-size:10px;
-        }
-
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            background-color: #11033a;
-        }
-        body.white-theme {
-            background-color:#f9f9f9;
-        }
-        body.gray-theme {
-            background-color:#ebecef;
-        }
-
-        #wrapper {
-            font-size:1.2rem;
-        }
-
-        /* 맨위로 가기 */
-        #top {
-            z-index:9999;
-            position:fixed;
-            right:1.4rem;
-            bottom:1.4rem;
-            width:6rem;
-            height:6rem;
-            background:url(../images/common/icon/ic-btn-top.png) no-repeat center / 6rem;
-            font-size:0;
-            text-indent:-9999px;
-        }
-
-        .hidden {
-            display:none;
-        }
+        /* //reset */
         body, html {
             font-size: 15px !important;
         }
@@ -141,31 +98,7 @@
         .newyear-wrap .newyear-content.time .time select {height:5.33rem; width:100%; font-size:1.4rem; padding-left:2rem;}
         .newyear-wrap .btn-area {width:36.07rem; margin:0 auto;}
         .newyear-wrap .notice-area {background:#414446;}
-        /* media query */
-        @media screen and (max-width: 475px) {
-            .newyear-wrap {max-width:100%;}
-            .newyear-wrap img {width:100%;}
-            .newyear-wrap .newyear-content {padding-right:5%!important; justify-content:flex-start;}
-            .newyear-wrap .newyear-content input {height: 2.93rem;}
-            .newyear-wrap .newyear-content.name .input {width:68%;}
-            .newyear-wrap .newyear-content .checks.new-cont {width:68%;}
-            .newyear-wrap .newyear-content .tit {width:32%;}
-            .newyear-wrap .newyear-content .new-cont {width:68%;}
-            .newyear-content .checks input[type="radio"] + label:before {top:-5px; width:1.4rem; height:1.4rem;}
-            .newyear-content .checks input[type="radio"]:checked + label:after {top:0px; left:5px; width:0.8rem; height:0.8rem;}
-            .newyear-content .checks input[type="radio"] + label {padding-left:2rem; font-size:0.95rem;}
-            .newyear-wrap .newyear-content .checks div {padding-right:0.93rem;}
-            .newyear-wrap .newyear-content .checks div:last-child {padding-right:0;}
-            .newyear-wrap .newyear-content .year div {width:calc(100%/3);}
-            .newyear-wrap .newyear-content .year span {font-size:0.95rem; padding: 0 1rem 0 0.5rem;}
-            .newyear-wrap .newyear-content .year div input {width:100%; font-size:0.95rem; padding-left:0; text-align:center;}
-            .newyear-wrap .newyear-content .year div input::placeholder {font-size:0.95rem;}
-            .newyear-wrap .newyear-content.time .time {width:68%;}
-            .newyear-wrap .newyear-content.time .time select {height:2.93rem; font-size:0.95rem;}
-            .newyear-wrap .btn-area {width:100%; padding:0 13%;}
-            .newyear-wrap .btn-area a:first-child {margin-bottom:0.73rem;}
-            .newyear-wrap .newyear-content.birth {padding-bottom:1.8rem; padding-top:0.86rem;}
-        }
+
         /* radio custom */
         .newyear-wrap .newyear-content .checks {
             position: relative;
@@ -210,9 +143,9 @@
             /*box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);*/
         }
 
-        .checks input[type="radio"] + label:active:before, .checks input[type="radio"]:checked + label:active:before {
-            /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);*/
-        }
+        /*.checks input[type="radio"] + label:active:before, .checks input[type="radio"]:checked + label:active:before {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }*/
 
         .checks input[type="radio"]:checked + label:before {
             background: #fff;
@@ -228,9 +161,167 @@
             height: 20px;
             background: #000;
             border-radius: 100%;
-           /* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);*/
+            /*box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);*/
+        }
+        /* 팝업 */
+        .pop-container {display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; background-color:rgba(0, 0, 0,0.6); z-index:150; overflow-y: scroll;}
+        .pop-container .pop-inner {position:relative; width:720px; padding:2.17rem 2.66rem 4.17rem; margin:0 auto;}
+        .pop-container .pop-inner a {display:inline-block;}
+        .pop-container .pop-inner .btn-close {position:absolute; right:3.73rem; top:4rem; width:1.73rem; height:1.73rem; background:url(../images/icon_close.png) no-repeat 0 0; background-size:100%; text-indent:-9999px;}
+        .pop-container .pop-inner .pop-top {width:100%; height:10px; background:url(../images/bg_top.png) no-repeat 0 0; background-size:100%;}
+        .pop-container .pop-contents {background: #fff;}
+        .pop-container .pop-contents img {width:100%;}
+        .pop-container .pop-contents .tit-name {padding-top:4.8rem; font-size:2.26rem; text-align:center;}
+        .pop-container .pop-contents .tit-name span {font-size:2.26rem; color:#006eea;}
+        .pop-container .tab-wrap .tab-head {display:flex; align-items:center; justify-content:center;}
+        .pop-container .tab-wrap .tab-head div {width:calc(100%/3); height:2rem; background-color:#fff;}
+        .pop-container .tab-wrap .tab-head div.active {background-color:rgba(197, 185, 185, 0.774); color:#fff;}
+        .pop-container .tab-wrap {margin-top:3rem; padding:0 2.66rem 2rem;}
+        .pop-container .tab-wrap .tab {overflow:hidden; }
+        .pop-container .tab-wrap .tab li {float:left; display:inline-block; padding:1.8rem; margin-right:2px; width:calc(33.3% - 2px); text-align:center; box-sizing:border-box; color:#999; cursor:pointer; font-size:1.86rem; background:#e5e5e5; }
+        .pop-container .tab-wrap .tab li:last-child {width:33.3%; margin-right:0;}
+        .pop-container .tab-wrap .tab li.on {background-color:#ffe34a; color:#000; font-weight:bold;}
+        .pop-container .tab-wrap .tab_con {max-height:400px; overflow-y:scroll; clear:both;}
+        .pop-container .tab-wrap .tab_con .conts {display:none; height:100%; background:#fff; text-align:center;}
+        .pop-container .head-img {position:relative;}
+        .pop-container .head-img .number {position:absolute; left:50%; top:48%; transform:translate(-50%,0); font-size:3.46rem; font-weight:bold; color:#fff;}
+        .pop-container .head-img .number span {font-size:3.2rem;}
+        .pop-container .text-area {padding-top:1rem; padding-bottom:4rem; font-size: 1.33rem; color: #333; line-height: 2.13rem; text-align: left;}
+        .pop-container .sub-tit-area {width:100%; height:5.33rem; }
+        .pop-container .conts01 .sub-tit-area {background:url("../images/img_sub_tit01.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts01 .sub-tit-area.sub02 {background:url("../images/img_sub_tit02.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts01  .sub-tit-area.sub03 {background:url("../images/img_sub_tit03.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts01  .sub-tit-area.sub04 {background:url("../images/img_sub_tit04.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts02 .sub-tit-area {background:url("../images/img_sub_tit05.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts02 .sub-tit-area.sub02 {background:url("../images/img_sub_tit06.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts02  .sub-tit-area.sub03 {background:url("../images/img_sub_tit07.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts02  .sub-tit-area.sub04 {background:url("../images/img_sub_tit08.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts02  .sub-tit-area.sub05 {background:url("../images/img_sub_tit09.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts03 .sub-tit-area {background:url("../images/img_sub_tit10.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts03 .sub-tit-area.sub02 {background:url("../images/img_sub_tit11.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts03  .sub-tit-area.sub03 {background:url("../images/img_sub_tit11.png") no-repeat 0 0; background-size:100%;}
+        .pop-container .conts03 .num-area {position:relative;}
+        .pop-container .conts03 .num-area .num {position:absolute; left:50%; top:45%; transform:translate(-50%,0); font-size:2.53rem; color:#222; font-weight:bold;}
+        .pop-container .conts03 .num-area .num span {font-size:2.3rem;}
+        .pop-container .btn-wrap {padding-top:3.33rem; padding-bottom:4rem; border-top:2px solid #ddd;}
+        .pop-container .btn-wrap .btn-luck {padding-bottom:1.33rem;}
+        .pop-container .percent-area {display:flex; align-items:center; justify-content:flex-start; padding:2rem 0 1rem;}
+        .pop-container .percent-area .graph {display:flex; align-items:center; justify-content:flex-start;}
+        .pop-container .percent-area .graph span {font-size:1.6rem; color:#333;}
+        .pop-container .percent-area .graph-area {width:70%;}
+        .pop-container .percent-area .thum {width:30%;}
+        .pop-container .percent-area .graph-area .graph .tit {width:20%;}
+        .pop-container .percent-area .graph-area .graph .bar {display:inline-block; width:60%; height:2.66rem; overflow:hidden;}
+        .pop-container .percent-area .graph-area .graph .bar span {display:inline-block; height:inherit; float:left;}
+        .pop-container .percent-area .graph-area .graph .num {width:20%;}
+        .pop-container .percent-area .graph-area .graph.top {padding-bottom:1.6rem;}
+        .pop-container .percent-area .graph-area .graph.top .bar span {background:#ff723b;}
+        .pop-container .percent-area .graph-area .graph.bottom .bar span {background:#51d0e5;}
+
+        /* media query */
+        /* max 475 */
+        @media screen and (max-width: 475px) {
+            .newyear-wrap {max-width:100%;}
+            .newyear-wrap img {width:100%;}
+            .newyear-wrap .newyear-content {padding-right:5%!important; justify-content:flex-start;}
+            .newyear-wrap .newyear-content input {height: 2.93rem; padding-left:1rem;}
+            .newyear-wrap .newyear-content.name .input {width:68%;}
+            .newyear-wrap .newyear-content .checks.new-cont {width:68%;}
+            .newyear-wrap .newyear-content .tit {width:32%;}
+            .newyear-wrap .newyear-content .new-cont {width:68%;}
+            .newyear-content .checks input[type="radio"] + label:before {top:-5px; width:1.4rem; height:1.4rem;}
+            .newyear-content .checks input[type="radio"]:checked + label:after {top:0px; left:5px; width:0.8rem; height:0.8rem;}
+            .newyear-content .checks input[type="radio"] + label {padding-left:2rem; font-size:0.95rem;}
+            .newyear-wrap .newyear-content .checks div {padding-right:0.93rem;}
+            .newyear-wrap .newyear-content .checks div:last-child {padding-right:0;}
+            .newyear-wrap .newyear-content .year div {width:calc(100%/3);}
+            .newyear-wrap .newyear-content .year span {font-size:0.95rem; padding: 0 1rem 0 0.5rem;}
+            .newyear-wrap .newyear-content .year div input {width:100%; font-size:0.95rem; padding-left:0; text-align:center;}
+            .newyear-wrap .newyear-content .year div input::placeholder {font-size:0.95rem;}
+            .newyear-wrap .newyear-content.time .time {width:68%;}
+            .newyear-wrap .newyear-content.time .time select {height:2.93rem; font-size:0.95rem; padding-left:1rem;}
+            .newyear-wrap .btn-area {width:100%; padding:0 13%;}
+            .newyear-wrap .btn-area a:first-child {margin-bottom:0.73rem;}
+            .newyear-wrap .newyear-content.birth {padding-bottom:1.8rem; padding-top:0.86rem;}
+            /* 팝업 max-475 */
+            .pop-container .pop-inner {width:100%; padding:2.17rem 1rem 2.17rem;}
+            .pop-container .pop-contents .tit-name,
+            .pop-container .pop-contents .tit-name span {font-size:1.6rem;}
+            .pop-container .tab-wrap {padding:0 1.6rem 2rem; margin-top:2rem;}
+            .pop-container .tab-wrap .tab li {padding:1rem; font-size:1.06rem;}
+            .pop-container .sub-tit-area {height:3rem;}
+            .pop-container .conts03 .num-area .num {top:41%; font-size:1.6rem;}
+            .pop-container .conts03 .num-area .num span {font-size:1.4rem;}
+            .pop-container .text-area {font-size:1.1rem;}
+            .pop-container .head-img .number {top:46%; font-size:2rem;}
+            .pop-container .head-img .number span {font-size:1.8rem;}
+            .pop-container .percent-area .graph span {font-size:1rem; font-weight:600;}
+            .pop-container .percent-area .graph-area .graph.top {padding-bottom:0.4rem;}
+            .pop-container .percent-area {padding:1rem 0 0.5rem;}
+            .pop-container .percent-area .graph-area .graph .bar {height:1.66rem; padding-right:0.5rem;}
+            .pop-container .pop-contents .tit-name {padding-top:2.5rem;}
+            .pop-container .pop-inner .btn-close {right:1.73rem; top:3.5rem; width:1.2rem; height:1.2rem;}
+        }
+        /* max 320 */
+        @media screen and (max-width: 320px) {
+            .newyear-content .checks input[type="radio"] + label {padding-left:2rem; font-size:0.75rem;}
+            .newyear-wrap .newyear-content .year span {font-size:0.75rem;}
+            .newyear-wrap .newyear-content .year div input::placeholder {font-size:0.75rem;}
+            .newyear-wrap .newyear-content.time .time select {height:2.93rem; font-size:0.75rem;}
+            .newyear-wrap .newyear-content .checks div {padding-right:0.53rem;}
+            .newyear-wrap .newyear-content .year div input {font-size:0.75rem;}
+            /* 팝업 max-320 */
+            .pop-container .tab-wrap {padding:0 1rem 2rem;}
+            .pop-container .tab-wrap .tab li {padding:0.7rem;}
+            .pop-container .text-area {padding-bottom:2rem; font-size:0.8rem; line-height:1.13rem;}
+            .pop-container .percent-area .graph span {font-size:0.8rem;}
+            .pop-container .conts03 .num-area .num {font-size:1.3rem;}
+            .pop-container .conts03 .num-area .num span {font-size:1.1rem;}
+            .pop-container .tab-wrap .tab_con {max-height:350px;}
         }
     </style>
+    <!-- 공통으로 필요한 스크립트는 common.js에 작성한다. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- 페이지에 필요한 스크립트는 이곳에 작성한다. -->
+    <script>
+        $(document).ready(function () {
+            /* 팝업 열기 */
+            $(".btn-enter").on("click", function () {
+                $(".pop-container").fadeIn();
+            })
+            /* 팝업 닫기 */
+            $(".btn-close").on("click", function () {
+                $(".pop-container").fadeOut();
+            })
+            /* tab */
+            $(function () {
+                tab('#tab',0);
+            });
+            function tab(e, num){
+                var num = num || 0;
+                var menu = $(e).children();
+                var con = $(e+'_con').children();
+                var select = $(menu).eq(num);
+                var i = num;
+
+                select.addClass('on');
+                con.eq(num).show();
+
+                menu.click(function(){
+                    if(select!==null){
+                        select.removeClass("on");
+                        con.eq(i).hide();
+                    }
+
+                    select = $(this);
+                    i = $(this).index();
+
+                    select.addClass('on');
+                    con.eq(i).show();
+                });
+            }
+        });
+    </script>
 </head>
 <body>
 <div id="wrapper">
@@ -238,17 +329,17 @@
     <div id="content-container">
         <!-- market 85 -->
         <div class="newyear-wrap">
-            <h2 class="tit"><img src="../img/market/img_tit.gif" alt="대박나이스 2021년 신녀운세"></h2>
+            <h2 class="tit"><img src="../images/img_tit.gif" alt="대박나이스 2021년 신녀운세"></h2>
             <div class="info-container">
                 <!-- 이름 -->
                 <div class="newyear-content name">
-                    <div class="tit"><img src="../img/market/img_name.gif" alt="이름"></div>
+                    <div class="tit"><img src="../images/img_name.gif" alt="이름"></div>
                     <div class="input new-cont"><input type="text"></div>
                 </div>
-                <div><img src="../img/market/img_bg.gif" alt="bg"></div>
+                <div><img src="../images/img_bg.gif" alt="bg"></div>
                 <!-- 성별 -->
                 <div class="newyear-content">
-                    <div class="tit"><img src="../img/market/img_sex.gif" alt="성별"></div>
+                    <div class="tit"><img src="../images/img_sex.gif" alt="성별"></div>
                     <div class="checks new-cont">
                         <div>
                             <input type="radio" id="women" name="sex" checked><label for="women">여자</label>
@@ -260,7 +351,7 @@
                 </div>
                 <!-- 양력/음력 -->
                 <div class="newyear-content">
-                    <div class="tit"><img src="../img/market/img_birth.gif" alt="양력/음력"></div>
+                    <div class="tit"><img src="../images/img_birth.gif" alt="양력/음력"></div>
                     <div class="checks new-cont">
                         <div>
                             <input type="radio" id="birth01" name="birth" checked><label for="birth01">양력</label>
@@ -275,7 +366,7 @@
                 </div>
                 <!-- 생년월일 -->
                 <div class="newyear-content birth">
-                    <div class="tit"><img src="../img/market/img_year.gif" alt="생년월일"></div>
+                    <div class="tit"><img src="../images/img_year.gif" alt="생년월일"></div>
                     <div class="year new-cont">
                         <div>
                             <input type="text" placeholder="1987" maxlength="4"><span>년</span>
@@ -290,7 +381,7 @@
                 </div>
                 <!-- 출생시간 -->
                 <div class="newyear-content time">
-                    <div class="tit"><img src="../img/market/img_time.gif" alt="출생시간"></div>
+                    <div class="tit"><img src="../images/img_time.gif" alt="출생시간"></div>
                     <div class="time new-cont">
                         <select name="" id="">
                             <option value="">23:00 ~ 23:00</option>
@@ -299,41 +390,241 @@
                         </select>
                     </div>
                 </div>
-                <div><img src="../img/market/img_noti01.gif" alt="개인정보 주의사항"></div>
+                <div><img src="../images/img_noti01.gif" alt="개인정보 주의사항"></div>
                 <div class="btn-area">
-                    <a href="#"><img src="../img/market/img_btn_01.gif" alt="2021 운세 보러가기"></a>
-                    <a href="#"><img src="../img/market/img_btn_02.gif" alt="친구에게 소문내기"></a>
+                    <!-- btn-enter 클릭시 popup 노출 -->
+                    <a href="#" class="btn-enter"><img src="../images/img_btn_01.gif" alt="2021 운세 보러가기"></a>
+                    <a href="#"><img src="../images/img_btn_02.gif" alt="친구에게 소문내기"></a>
                 </div>
-                <div class="notice-area"><img src="../img/market/img_noti02.png" alt="주의사항"></div>
+                <div class="notice-area"><img src="../images/img_noti02.png" alt="주의사항"></div>
             </div>
         </div>
         <!-- //market 85 -->
         <!-- 팝업 -->
-        <div class="pop-container active" style="display: none;">
+        <div class="pop-container" style="display: block;">
             <div class="pop-inner">
-                <img src="//webimage.10x10.co.kr/fixevent/event/2020/106538/m/img_pop_intro.png"
-                     alt="100% 과즙 상큼폭탄 마이구매 jam">
-                <button type="button" class="btn-close">닫기</button>
+                <div class="pop-contents">
+                    <div class="pop-top"></div>
+                    <div class="tit-name">2021년 <span>'<span>홍길동</span> 님'</span> 운세</div>
+                    <div class="tab-wrap">
+                        <ul class="tab" id="tab">
+                            <li>총운</li>
+                            <li>10대 운</li>
+                            <li>월별운</li>
+                        </ul>
+
+                        <div class="tab_con" id="tab_con">
+                            <!-- 총운 -->
+                            <div class="conts conts01">
+                                <div class="head-img">
+                                    <img src="../images/img_tit_head01.png" alt="2021년 운세를 펼쳐 보겠소">
+                                    <div class="number">95<span>점</span></div>
+                                </div>
+                                <!-- 2021 총운 -->
+                                <div>
+                                    <div class="sub-tit-area"></div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 복을 부르는 키 포인트 -->
+                                <div>
+                                    <div class="sub-tit-area sub02"></div>
+                                    <img src="../images/img_item01.png" alt="복 조리 아이템">
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 상반기 운세 -->
+                                <div>
+                                    <div class="sub-tit-area sub03"></div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 하반기 운세 -->
+                                <div>
+                                    <div class="sub-tit-area sub04"></div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 버튼 area -->
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn-luck"><img src="../images/img_btn_02.png" alt="운세 다시 보기"></a>
+                                    <a href="#"><img src="../images/img_btn_03.png" alt="친구에게 공유하기"></a>
+                                </div>
+                            </div>
+                            <!-- 10대 운 -->
+                            <div class="conts conts02">
+                                <div class="head-img">
+                                    <img src="../images/img_tit_head02.png" alt="어디한번 뽑아 보시오">
+                                </div>
+                                <!-- 재물&성공운 -->
+                                <div>
+                                    <div class="sub-tit-area"></div>
+                                    <div class="percent-area">
+                                        <div class="thum"><img src="../images/img_thum01.png" alt="재물&성공"></div>
+                                        <div class="graph-area">
+                                            <div class="graph top">
+                                                <span class="tit">재물</span>
+                                                <span class="bar">
+                                                    <span style="width:75%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">75점</span>
+                                            </div>
+                                            <div class="graph bottom">
+                                                <span class="tit">성공</span>
+                                                <span class="bar">
+                                                    <span style="width:100%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">100점</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 가정&애정운 -->
+                                <div>
+                                    <div class="sub-tit-area sub02"></div>
+                                    <div class="percent-area">
+                                        <div class="thum"><img src="../images/img_thum02.png" alt="가정&애정"></div>
+                                        <div class="graph-area">
+                                            <div class="graph top">
+                                                <span class="tit">가정</span>
+                                                <span class="bar">
+                                                    <span style="width:75%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">75점</span>
+                                            </div>
+                                            <div class="graph bottom">
+                                                <span class="tit">애정</span>
+                                                <span class="bar">
+                                                    <span style="width:100%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">100점</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 건강&소망운 -->
+                                <div>
+                                    <div class="sub-tit-area sub03"></div>
+                                    <div class="percent-area">
+                                        <div class="thum"><img src="../images/img_thum03.png" alt="건강&소망"></div>
+                                        <div class="graph-area">
+                                            <div class="graph top">
+                                                <span class="tit">건강</span>
+                                                <span class="bar">
+                                                    <span style="width:75%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">75점</span>
+                                            </div>
+                                            <div class="graph bottom">
+                                                <span class="tit">소망</span>
+                                                <span class="bar">
+                                                    <span style="width:100%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">100점</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 학업&대인운 -->
+                                <div>
+                                    <div class="sub-tit-area sub04"></div>
+                                    <div class="percent-area">
+                                        <div class="thum"><img src="../images/img_thum04.png" alt="학업&대인"></div>
+                                        <div class="graph-area">
+                                            <div class="graph top">
+                                                <span class="tit">학업</span>
+                                                <span class="bar">
+                                                    <span style="width:75%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">75점</span>
+                                            </div>
+                                            <div class="graph bottom">
+                                                <span class="tit">대인</span>
+                                                <span class="bar">
+                                                    <span style="width:100%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">100점</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 창업&이전운 -->
+                                <div>
+                                    <div class="sub-tit-area sub05"></div>
+                                    <div class="percent-area">
+                                        <div class="thum"><img src="../images/img_thum05.png" alt="창업&이전"></div>
+                                        <div class="graph-area">
+                                            <div class="graph top">
+                                                <span class="tit">창업</span>
+                                                <span class="bar">
+                                                    <span style="width:75%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">75점</span>
+                                            </div>
+                                            <div class="graph bottom">
+                                                <span class="tit">이전</span>
+                                                <span class="bar">
+                                                    <span style="width:100%;"></span><!-- graph percent -->
+                                                </span>
+                                                <span class="num">100점</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 버튼 area -->
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn-luck"><img src="../images/img_btn_02.png" alt="운세 다시 보기"></a>
+                                    <a href="#"><img src="../images/img_btn_03.png" alt="친구에게 공유하기"></a>
+                                </div>
+                            </div>
+                            <!-- 월별운 -->
+                            <div class="conts conts03">
+                                <div class="head-img">
+                                    <img src="../images/img_tit_head03.png" alt="대박 나이스">
+                                </div>
+                                <!-- 1월 운세 -->
+                                <div>
+                                    <div class="sub-tit-area"></div>
+                                    <div class="num-area">
+                                        <img src="../images/img_thum06.png" alt="운세">
+                                        <span class="num">75<span>점</span></span><!-- 운세 점수 -->
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 2월 운세 -->
+                                <div>
+                                    <div class="sub-tit-area sub02"></div>
+                                    <div class="num-area">
+                                        <img src="../images/img_thum06.png" alt="운세">
+                                        <span class="num">75<span>점</span></span><!-- 운세 점수 -->
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 3월 운세 -->
+                                <div>
+                                    <div class="sub-tit-area sub03"></div>
+                                    <div class="num-area">
+                                        <img src="../images/img_thum06.png" alt="운세">
+                                        <span class="num">75<span>점</span></span><!-- 운세 점수 -->
+                                    </div>
+                                    <div class="text-area">천년 비기로 당신의 운명을 바꾼다.올해의 기운을 잘 활용하여 뜻한 바가 있다면 이루어야 하는 해입니다.</div>
+                                </div>
+                                <!-- 버튼 area -->
+                                <div class="btn-wrap">
+                                    <a href="#" class="btn-luck"><img src="../images/img_btn_02.png" alt="운세 다시 보기"></a>
+                                    <a href="#"><img src="../images/img_btn_03.png" alt="친구에게 공유하기"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close">닫기</button>
+                </div>
             </div>
+            <!--//팝업-->
         </div>
-        <!--//팝업-->
     </div>
 </div>
 
-<!-- 공통으로 필요한 스크립트는 common.js에 작성한다. -->
-<script type="text/javascript" src="../../assets/js/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="../../assets/js/swiper.min.js"></script>
-<script type="text/javascript" src="../../assets/js/common.js"></script>
-<!-- 페이지에 필요한 스크립트는 이곳에 작성한다. -->
-<script>
-    $(document).ready(function () {
-        $(".btn-enter").on("click", function () {
-            $(".pop-container").fadeIn();
-        })
-        $(".btn-close").on("click", function () {
-            $(".pop-container").fadeOut();
-        })
-    });
-</script>
 </body>
 </html>
