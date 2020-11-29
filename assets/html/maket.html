@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>test</title>
     <style>
@@ -324,11 +325,8 @@
             }
             /* tab conts 높이 */
             var height = $(window).height();
-            console.log(height);
             var pop_top = $(".pop-top").height() + $(".tit-name").height() + $(".tab").height();
-            console.log(pop_top);
             var cont_height = height - pop_top;
-            console.log(cont_height);
             $(".tab_con").css("max-height",cont_height);
         });
     </script>
