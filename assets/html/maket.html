@@ -322,7 +322,8 @@
                 });
             }
             /* tab conts 높이 */
-            var height = $(window).height();
+            var height = $(document).height();
+            console.log(height);
             var pop_top = $(".pop-top").height() + $(".tit-name").height() + $(".tab").height() + 4.5;
             console.log(pop_top);
             var cont_height = height - pop_top;
